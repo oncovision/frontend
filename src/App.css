@@ -29,6 +29,7 @@ body {
   color: #fff; 
   background-color: #231e28;
   padding: 10px 15px; 
+  border-radius: 10px;
 }
 .vertical {
   border-left: 3px solid #fd5f07;
