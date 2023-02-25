@@ -19,13 +19,13 @@ function DataScientistLungCancer() {
               tab1="Genomic Analysis"
               tab2="Pathological Analysis"
               tab3="Radiological Analysis"
-              tab4="Survival Curve"
-              tab5="Integrated View"
+              tab4="Multimodal Biomedical Integration"
+              tab5="Survival Curve"
               content1={DSGenomicAnalysis}
               content2={Page2}
               content3={Page3}
-              content4={Page1}
-              content5={Page5}
+              content4={Page5}
+              content5={Page1}
             />
           </Grid>
         </Grid>

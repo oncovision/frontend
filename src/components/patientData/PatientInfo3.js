@@ -40,47 +40,17 @@ const starIcon = {
 
 export const timeline1 = [
   {
-    icon: workIcon,
-    date: "2011 - present",
-    title: "Last Diagnosis",
-    subtitle: "Status : Alive",
-    desc: "After 3rd Chemo, patient survived.",
-  },
-  {
-    icon: workIcon,
-    date: "2010 - 2011",
-    title: "Third Diagnosis",
-    subtitle:
-      "Status : Patienet show signs of recovery and body was responding well to chemo",
-    desc: "Chemo exact details:",
-  },
-  {
-    icon: workIcon,
-    date: "2008 - 2010",
-    title: "Second Diagnosis",
-    subtitle: "Status : Chemo in Progress",
-    desc: "Patient on low diet and Chemo in progress",
-  },
-  {
-    icon: workIcon,
-    date: "2006 - 2008",
-    title: "First Diagnosis",
-    subtitle: "Status : Chemo in progress",
-    desc: "Patient on low diet and Chemo in progress",
-  },
-
-  {
     icon: schoolIcon,
     date: "2004 - 2006",
-    title: "Inital Diagnosis",
+    title: "Malignant lesion found",
     subtitle: "Status : Tumours taken for tests",
     desc: "Signs and symptoms of malignant lesion observed.",
   },
   {
     icon: familyIcon,
     date: " - 2006",
-    title: "Medical History of family",
-    subtitle: "No chronic health conditions found",
+    title: "Medical History of family verified.",
+    subtitle: "No chronic health conditions found.",
     desc: "Family history found to be clean.",
   },
   {
@@ -110,39 +80,9 @@ export const timeline1 = [
 
 export const timeline2 = [
   {
-    icon: workIcon,
-    date: "2011 - present",
-    title: "Last Diagnosis",
-    subtitle: "Status : Died",
-    desc: "After 3rd Chemo, patient died.",
-  },
-  {
-    icon: workIcon,
-    date: "2010 - 2011",
-    title: "Third Diagnosis",
-    subtitle:
-      "Status : Patienet doesn't show signs of recovery and body didn't respond well to chemo",
-    desc: "Chemo exact details:",
-  },
-  {
-    icon: workIcon,
-    date: "2008 - 2010",
-    title: "Second Diagnosis",
-    subtitle: "Status : Chemo in Progress",
-    desc: "Patient on low diet and Chemo in progress",
-  },
-  {
-    icon: workIcon,
-    date: "2006 - 2008",
-    title: "First Diagnosis",
-    subtitle: "Status : Chemo in progress",
-    desc: "Patient on low diet and Chemo in progress",
-  },
-
-  {
     icon: schoolIcon,
     date: "2004 - 2006",
-    title: "Inital Diagnosis",
+    title: "Malignant lesion found",
     subtitle: "Status : Tumours taken for tests",
     desc: "Signs and symptoms of malignant lesion observed.",
   },
@@ -180,39 +120,9 @@ export const timeline2 = [
 
 export const timeline3 = [
   {
-    icon: workIcon,
-    date: "2011 - present",
-    title: "Last Diagnosis",
-    subtitle: "Status : Died",
-    desc: "After 3rd Chemo, patient died.",
-  },
-  {
-    icon: workIcon,
-    date: "2010 - 2011",
-    title: "Third Diagnosis",
-    subtitle:
-      "Status : Patienet doesn't show signs of recovery and body didn't respond well to chemo",
-    desc: "Chemo exact details:",
-  },
-  {
-    icon: workIcon,
-    date: "2008 - 2010",
-    title: "Second Diagnosis",
-    subtitle: "Status : Chemo in Progress",
-    desc: "Patient on low diet and Chemo in progress",
-  },
-  {
-    icon: workIcon,
-    date: "2006 - 2008",
-    title: "First Diagnosis",
-    subtitle: "Status : Chemo in progress",
-    desc: "Patient on low diet and Chemo in progress",
-  },
-
-  {
     icon: schoolIcon,
     date: "2004 - 2006",
-    title: "Inital Diagnosis",
+    title: "Malignant lesion found",
     subtitle: "Status : Tumours taken for tests",
     desc: "Signs and symptoms of malignant lesion observed.",
   },
@@ -221,7 +131,7 @@ export const timeline3 = [
     date: " - 2006",
     title: "Medical History of family verified.",
     subtitle: "No chronic health conditions found.",
-    desc: "Family history found to be clean but he was adopted.",
+    desc: "Family history found to be clean.",
   },
   {
     icon: admitIcon,
@@ -250,38 +160,9 @@ export const timeline3 = [
 
 export const timeline4 = [
   {
-    icon: workIcon,
-    date: "2011 - present",
-    title: "Last Diagnosis",
-    subtitle: "Status : Alive",
-    desc: "After 3rd Chemo, patient survived.",
-  },
-  {
-    icon: workIcon,
-    date: "2010 - 2011",
-    title: "Third Diagnosis",
-    subtitle:
-      "Status : Patienet show signs of recovery and body was responding well to chemo",
-    desc: "Chemo exact details:",
-  },
-  {
-    icon: workIcon,
-    date: "2008 - 2010",
-    title: "Second Diagnosis",
-    subtitle: "Status : Chemo in Progress",
-    desc: "Patient on low diet and Chemo in progress",
-  },
-  {
-    icon: workIcon,
-    date: "2006 - 2008",
-    title: "First Diagnosis",
-    subtitle: "Status : Chemo in progress",
-    desc: "Patient on low diet and Chemo in progress",
-  },
-  {
     icon: schoolIcon,
     date: "2004 - 2006",
-    title: "Inital Diagnosis",
+    title: "Malignant lesion found",
     subtitle: "Status : Tumours taken for tests",
     desc: "Signs and symptoms of cancer observed.",
   },
@@ -318,38 +199,9 @@ export const timeline4 = [
 
 export const timeline5 = [
   {
-    icon: workIcon,
-    date: "2011 - present",
-    title: "Last Diagnosis",
-    subtitle: "Status : Dead",
-    desc: "After 3rd Chemo, patient died.",
-  },
-  {
-    icon: workIcon,
-    date: "2010 - 2011",
-    title: "Third Diagnosis",
-    subtitle:
-      "Status : Patienet didn't show signs of recovery and body is not responding well to chemo",
-    desc: "Chemo exact details:",
-  },
-  {
-    icon: workIcon,
-    date: "2008 - 2010",
-    title: "Second Diagnosis",
-    subtitle: "Status : Chemo in Progress",
-    desc: "Patient on low diet and Chemo in progress",
-  },
-  {
-    icon: workIcon,
-    date: "2006 - 2008",
-    title: "First Diagnosis",
-    subtitle: "Status : Chemo in progress",
-    desc: "Patient on low diet and Chemo in progress",
-  },
-  {
     icon: schoolIcon,
     date: "2004 - 2006",
-    title: "Inital Diagnosis",
+    title: "Malignant lesion found",
     subtitle: "Status : Tumours taken for tests",
     desc: "Signs and symptoms of cancer observed.",
   },
@@ -358,7 +210,7 @@ export const timeline5 = [
     date: " - 2006",
     title: "Medical History of family verified",
     subtitle: "Chronic health conditions found in family.",
-    desc: "Paternal grandmother found to be died from Cancer.",
+    desc: "Paternal uncle found to be died from Cancer.",
   },
   {
     icon: admitIcon,

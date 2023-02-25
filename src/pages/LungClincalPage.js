@@ -8,7 +8,7 @@ import {
 } from "react-table";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Grid } from '@mui/material';
+import { Grid } from "@mui/material";
 
 function GlobalFilter({
   preGlobalFilteredRows,
@@ -141,8 +141,8 @@ function LungClincalPage() {
       accessor: "Tumor Location (choice=RLL)",
     },
     {
-      Header: "Chemotherapy",
-      accessor: "Chemotherapy",
+      Header: "chemotherapytherapy",
+      accessor: "chemotherapytherapy",
     },
     {
       Header: "Radiation",
@@ -202,75 +202,85 @@ function LungClincalPage() {
   return (
     <div className="pt-7">
       <div className="container shadow-1">
-      <Grid container spacing={2}>
-      <Grid item xs={12}>
-        <h1>Individual Patient Data</h1>
-      </Grid>
-      <Grid item xs={12}>
-        <div className="table-responsive">
-        <table {...getTableProps()} className="table table-bordered table-hover">
-        <thead>
-          {headerGroups.map((headerGroup) => (
-            <tr {...headerGroup.getHeaderGroupProps()}>
-              {headerGroup.headers.map((column) => (
-                <th
-                  {...column.getHeaderProps(column.getSortByToggleProps())}
-                  style={{
-                    borderBottom: "solid 3px red",
-                    color: "black",
-                  }}
-                >
-                  {column.render("Header")}
-                  <span>
-                    {column.isSorted ? (column.isSortedDesc ? "🔽" : "🔼") : ""}
-                  </span>
-                  <div>{column.canFilter ? column.render("Filter") : null}</div>
-                </th>
-              ))}
-            </tr>
-          ))}
-          <tr>
-            <th
-              colSpan={visibleColumns.length}
-              style={{
-                textAlign: "left",
-              }}
-            >
-              <GlobalFilter
-                preGlobalFilteredRows={preGlobalFilteredRows}
-                globalFilter={state.globalFilter}
-                setGlobalFilter={setGlobalFilter}
-              />
-            </th>
-          </tr>
-        </thead>
-        <tbody {...getTableBodyProps()}>
-          {rows.map((row) => {
-            prepareRow(row);
-            return (
-              <tr {...row.getRowProps()}>
-                {row.cells.map((cell) => {
-                  return (
-                    <td
-                      {...cell.getCellProps()}
+        <Grid container spacing={2}>
+          <Grid item xs={12}>
+            <h1>Individual Patient Data</h1>
+          </Grid>
+          <Grid item xs={12}>
+            <div className="table-responsive">
+              <table
+                {...getTableProps()}
+                className="table table-bordered table-hover"
+              >
+                <thead>
+                  {headerGroups.map((headerGroup) => (
+                    <tr {...headerGroup.getHeaderGroupProps()}>
+                      {headerGroup.headers.map((column) => (
+                        <th
+                          {...column.getHeaderProps(
+                            column.getSortByToggleProps()
+                          )}
+                          style={{
+                            borderBottom: "solid 3px red",
+                            color: "black",
+                          }}
+                        >
+                          {column.render("Header")}
+                          <span>
+                            {column.isSorted
+                              ? column.isSortedDesc
+                                ? "🔽"
+                                : "🔼"
+                              : ""}
+                          </span>
+                          <div>
+                            {column.canFilter ? column.render("Filter") : null}
+                          </div>
+                        </th>
+                      ))}
+                    </tr>
+                  ))}
+                  <tr>
+                    <th
+                      colSpan={visibleColumns.length}
                       style={{
-                        padding: "10px",
-                        border: "solid 1px gray",
+                        textAlign: "left",
                       }}
                     >
-                      {cell.render("Cell")}
-                    </td>
-                  );
-                })}
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-        </div>
-      
-      </Grid>
-    </Grid>
+                      <GlobalFilter
+                        preGlobalFilteredRows={preGlobalFilteredRows}
+                        globalFilter={state.globalFilter}
+                        setGlobalFilter={setGlobalFilter}
+                      />
+                    </th>
+                  </tr>
+                </thead>
+                <tbody {...getTableBodyProps()}>
+                  {rows.map((row) => {
+                    prepareRow(row);
+                    return (
+                      <tr {...row.getRowProps()}>
+                        {row.cells.map((cell) => {
+                          return (
+                            <td
+                              {...cell.getCellProps()}
+                              style={{
+                                padding: "10px",
+                                border: "solid 1px gray",
+                              }}
+                            >
+                              {cell.render("Cell")}
+                            </td>
+                          );
+                        })}
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+          </Grid>
+        </Grid>
       </div>
     </div>
   );
