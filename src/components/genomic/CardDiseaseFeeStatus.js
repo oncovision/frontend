@@ -8,12 +8,12 @@ export default function CardDiseaseFeeStatus(){
             label: 'Quantity',
             data: [23, 87],
             backgroundColor: [
-              '#d3d3d3', 
-              '#d95f02'
+              '#C84802', 
+              '#ECCFA4'
             ],
             borderColor: [
-                '#d3d3d3', 
-                '#d95f02',
+                '#C84802', 
+                '#ECCFA4',
             ],
             borderWidth: 1,
           },
