@@ -7,6 +7,7 @@ import LungClincalPage from "./pages/LungClincalPage";
 import PatientInfo from "./pages/PatientInfo";
 
 import "./App.css";
+import DataScientistLungCancer from "./pages/DataScientistLungCancer";
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
         <Route
           path="/PatientInfopage"
           element={<PatientInfo />}
+        />
+        <Route
+          path="/DataScientistLungCancer"
+          element={<DataScientistLungCancer />}
         />
       </Routes>
     </div>
