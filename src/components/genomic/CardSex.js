@@ -8,12 +8,12 @@ export default function CardSex(){
             label: 'Quantity',
             data: [345, 232],
             backgroundColor: [
-              '#718cf1',
-              '#ff93e2',
+              '#8ACBD8',
+              '#BAE39A',
             ],
             borderColor: [
-              '#718cf1',
-              '#ff93e2',
+              '#8ACBD8',
+              '#BAE39A',
             ],
             borderWidth: 1,
           },
