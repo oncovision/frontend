@@ -37,7 +37,7 @@ export default function CardMutation() {
       {
         label: "Number of samples",
         data: labels.map(() => faker.datatype.number({ min: 0, max: 1000 })),
-        backgroundColor: "#2986e2",
+        backgroundColor: "#009CB3",
       },
     ],
   };
