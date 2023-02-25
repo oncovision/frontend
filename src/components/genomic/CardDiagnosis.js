@@ -38,7 +38,7 @@ export default function CardDiagnosis() {
       {
         label: "Number of samples",
         data: labels.map(() => faker.datatype.number({ min: 0, max: 100 })),
-        backgroundColor: "#2986e2",
+        backgroundColor: "#009CB3",
       },
     ],
   };
