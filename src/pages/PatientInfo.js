@@ -13,16 +13,16 @@ function PatientInfo() {
       <Tabs
         tab1="Medical History Timeline"
         tab2="Diagnosis Timeline"
-        tab3="MRD Data"
+        tab3="Histology Data"
         tab4="Radiology Data"
-        tab5="Histology Data"
+        tab5="MRD Data"
         tab6="Integrated View"
         tab7="Compare Reports"
         content1={PatientInfo3}
         content2={PatientInfo2}
-        content3={PatientInfoPage}
+        content3={PatientInfo5}
         content4={PatientInfo4}
-        content5={PatientInfo5}
+        content5={PatientInfoPage}
         content6={PatientInfo6}
         content7={PatientInfo7}
       ></Tabs>

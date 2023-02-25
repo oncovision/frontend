@@ -1,6 +1,5 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { palette } from "@mui/system";
 
 import {
   VerticalTimeline,
@@ -12,6 +11,7 @@ import {
   faHospital,
   faTruck,
   faRadiation,
+  faHome,
 } from "@fortawesome/free-solid-svg-icons";
 
 import "react-vertical-timeline-component/style.min.css";
@@ -19,6 +19,10 @@ import "../../styles/About.css";
 
 const workIcon = {
   icon: <FontAwesomeIcon icon={faRadiation} />,
+  iconStyle: { background: "rgb(33, 150, 243)", color: "#fff" },
+};
+const familyIcon = {
+  icon: <FontAwesomeIcon icon={faHome} />,
   iconStyle: { background: "rgb(33, 150, 243)", color: "#fff" },
 };
 const schoolIcon = {
@@ -47,7 +51,7 @@ export const timeline1 = [
     date: "2010 - 2011",
     title: "Third Diagnosis",
     subtitle:
-      "Status : Patienet shows signs of recovery and body is responding well to chemo",
+      "Status : Patienet show signs of recovery and body was responding well to chemo",
     desc: "Chemo exact details:",
   },
   {
@@ -64,27 +68,43 @@ export const timeline1 = [
     subtitle: "Status : Chemo in progress",
     desc: "Patient on low diet and Chemo in progress",
   },
+
   {
     icon: schoolIcon,
     date: "2004 - 2006",
     title: "Inital Diagnosis",
     subtitle: "Status : Tumours taken for tests",
-    desc: "Signs and symptoms of cancer observed.",
+    desc: "Signs and symptoms of malignant lesion observed.",
+  },
+  {
+    icon: familyIcon,
+    date: " - 2006",
+    title: "Medical History of family",
+    subtitle: "No chronic health conditions found",
+    desc: "Family history found to be clean.",
   },
   {
     icon: admitIcon,
     date: "2002 - 2004",
-    title: "Admitted to hospital for panic attack",
+    title: "Medication started for benign lesion",
     subtitle: "Initial prognosis",
-    desc: "Patinet had panic attack for first time.",
+    desc: "Patinet couldn't see any improvement from medications.",
   },
   {
     icon: admitIcon,
     date: "2001 - 2002",
-    title: "Admitted to hospital for minor issues",
-    subtitle: "Minor stress issues",
-    desc: "Patinet had high stress due to studies",
+    title: "Admitted to hospital and found benign lesion",
+    subtitle: "Initial prognosis",
+    desc: "Patinet found lump that can be felt under the skin",
   },
+  {
+    icon: admitIcon,
+    date: "1999 - 2001",
+    title: "Visited family doctor",
+    subtitle: "Fatigue issues",
+    desc: "Patinet used to feel tired very easily.",
+  },
+
   { icon: starIcon },
 ];
 
@@ -93,15 +113,15 @@ export const timeline2 = [
     icon: workIcon,
     date: "2011 - present",
     title: "Last Diagnosis",
-    subtitle: "Status : Alive",
-    desc: "After 3rd Chemo, patient survived.",
+    subtitle: "Status : Died",
+    desc: "After 3rd Chemo, patient died.",
   },
   {
     icon: workIcon,
     date: "2010 - 2011",
     title: "Third Diagnosis",
     subtitle:
-      "Status : Patienet shows signs of recovery and body is responding well to chemo",
+      "Status : Patienet doesn't show signs of recovery and body didn't respond well to chemo",
     desc: "Chemo exact details:",
   },
   {
@@ -118,27 +138,43 @@ export const timeline2 = [
     subtitle: "Status : Chemo in progress",
     desc: "Patient on low diet and Chemo in progress",
   },
+
   {
     icon: schoolIcon,
     date: "2004 - 2006",
     title: "Inital Diagnosis",
     subtitle: "Status : Tumours taken for tests",
-    desc: "Signs and symptoms of cancer observed.",
+    desc: "Signs and symptoms of malignant lesion observed.",
+  },
+  {
+    icon: familyIcon,
+    date: " - 2006",
+    title: "Medical History of family verified.",
+    subtitle: "No chronic health conditions found.",
+    desc: "Family history found to be clean but he was adopted.",
   },
   {
     icon: admitIcon,
     date: "2002 - 2004",
-    title: "Admitted to hospital for panic attack",
+    title: "Medication started for benign lesion",
     subtitle: "Initial prognosis",
-    desc: "Patinet had panic attack for first time.",
+    desc: "Patinet couldn't see any improvement from medications.",
   },
   {
     icon: admitIcon,
     date: "2001 - 2002",
-    title: "Admitted to hospital for minor issues",
-    subtitle: "Minor stress issues",
-    desc: "Patinet had high stress due to studies",
+    title: "Admitted to hospital and found benign lesion",
+    subtitle: "Initial prognosis",
+    desc: "Patinet found lump that can be felt under the skin",
   },
+  {
+    icon: admitIcon,
+    date: "1999 - 2001",
+    title: "Visited family doctor",
+    subtitle: "Cough issues",
+    desc: "Patinet used to get persistent cough.",
+  },
+
   { icon: starIcon },
 ];
 
@@ -147,15 +183,15 @@ export const timeline3 = [
     icon: workIcon,
     date: "2011 - present",
     title: "Last Diagnosis",
-    subtitle: "Status : Alive",
-    desc: "After 3rd Chemo, patient survived.",
+    subtitle: "Status : Died",
+    desc: "After 3rd Chemo, patient died.",
   },
   {
     icon: workIcon,
     date: "2010 - 2011",
     title: "Third Diagnosis",
     subtitle:
-      "Status : Patienet shows signs of recovery and body is responding well to chemo",
+      "Status : Patienet doesn't show signs of recovery and body didn't respond well to chemo",
     desc: "Chemo exact details:",
   },
   {
@@ -172,27 +208,43 @@ export const timeline3 = [
     subtitle: "Status : Chemo in progress",
     desc: "Patient on low diet and Chemo in progress",
   },
+
   {
     icon: schoolIcon,
     date: "2004 - 2006",
     title: "Inital Diagnosis",
     subtitle: "Status : Tumours taken for tests",
-    desc: "Signs and symptoms of cancer observed.",
+    desc: "Signs and symptoms of malignant lesion observed.",
+  },
+  {
+    icon: familyIcon,
+    date: " - 2006",
+    title: "Medical History of family verified.",
+    subtitle: "No chronic health conditions found.",
+    desc: "Family history found to be clean but he was adopted.",
   },
   {
     icon: admitIcon,
     date: "2002 - 2004",
-    title: "Admitted to hospital for panic attack",
+    title: "Medication started for benign lesion",
     subtitle: "Initial prognosis",
-    desc: "Patinet had panic attack for first time.",
+    desc: "Patinet couldn't see any improvement from medications.",
   },
   {
     icon: admitIcon,
     date: "2001 - 2002",
-    title: "Admitted to hospital for minor issues",
-    subtitle: "Minor stress issues",
-    desc: "Patinet had high stress due to studies",
+    title: "Admitted to hospital and found benign lesion",
+    subtitle: "Initial prognosis",
+    desc: "Patinet found lump that can be felt under the skin",
   },
+  {
+    icon: admitIcon,
+    date: "1999 - 2001",
+    title: "Visited family doctor",
+    subtitle: "Hoarseness issues",
+    desc: "Patinet used to feel hoarseness.",
+  },
+
   { icon: starIcon },
 ];
 
@@ -209,7 +261,7 @@ export const timeline4 = [
     date: "2010 - 2011",
     title: "Third Diagnosis",
     subtitle:
-      "Status : Patienet shows signs of recovery and body is responding well to chemo",
+      "Status : Patienet show signs of recovery and body was responding well to chemo",
     desc: "Chemo exact details:",
   },
   {
@@ -234,18 +286,32 @@ export const timeline4 = [
     desc: "Signs and symptoms of cancer observed.",
   },
   {
+    icon: familyIcon,
+    date: " - 2006",
+    title: "Medical History of family verified",
+    subtitle: "Chronic health conditions found in family.",
+    desc: "Paternal grandmother found to be died from Cancer.",
+  },
+  {
     icon: admitIcon,
     date: "2002 - 2004",
-    title: "Admitted to hospital for panic attack",
+    title: "Medication started for benign lesion",
     subtitle: "Initial prognosis",
-    desc: "Patinet had panic attack for first time.",
+    desc: "Patinet couldn't see any improvement from medications.",
   },
   {
     icon: admitIcon,
     date: "2001 - 2002",
-    title: "Admitted to hospital for minor issues",
-    subtitle: "Minor stress issues",
-    desc: "Patinet had high stress due to studies",
+    title: "Admitted to hospital and found benign lesion",
+    subtitle: "Initial prognosis",
+    desc: "Patinet found lump that can be felt under the skin",
+  },
+  {
+    icon: admitIcon,
+    date: "1999 - 2001",
+    title: "Visited family doctor.",
+    subtitle: "Common cold and trouble breathing.",
+    desc: "Patinet used to catch cold easily and shortness of breath.",
   },
   { icon: starIcon },
 ];
@@ -255,15 +321,15 @@ export const timeline5 = [
     icon: workIcon,
     date: "2011 - present",
     title: "Last Diagnosis",
-    subtitle: "Status : Alive",
-    desc: "After 3rd Chemo, patient survived.",
+    subtitle: "Status : Dead",
+    desc: "After 3rd Chemo, patient died.",
   },
   {
     icon: workIcon,
     date: "2010 - 2011",
     title: "Third Diagnosis",
     subtitle:
-      "Status : Patienet shows signs of recovery and body is responding well to chemo",
+      "Status : Patienet didn't show signs of recovery and body is not responding well to chemo",
     desc: "Chemo exact details:",
   },
   {
@@ -288,18 +354,32 @@ export const timeline5 = [
     desc: "Signs and symptoms of cancer observed.",
   },
   {
+    icon: familyIcon,
+    date: " - 2006",
+    title: "Medical History of family verified",
+    subtitle: "Chronic health conditions found in family.",
+    desc: "Paternal grandmother found to be died from Cancer.",
+  },
+  {
     icon: admitIcon,
     date: "2002 - 2004",
-    title: "Admitted to hospital for panic attack",
+    title: "Medication started for benign lesion",
     subtitle: "Initial prognosis",
-    desc: "Patinet had panic attack for first time.",
+    desc: "Patinet couldn't see any improvement from medications.",
   },
   {
     icon: admitIcon,
     date: "2001 - 2002",
-    title: "Admitted to hospital for minor issues",
-    subtitle: "Minor stress issues",
-    desc: "Patinet had high stress due to studies",
+    title: "Admitted to hospital and found benign lesion",
+    subtitle: "Initial prognosis",
+    desc: "Patinet found lump that can be felt under the skin",
+  },
+  {
+    icon: admitIcon,
+    date: "1999 - 2001",
+    title: "Visited family doctor",
+    subtitle: "Fatigue issues",
+    desc: "Patinet used to feel tired very easily.",
   },
   { icon: starIcon },
 ];
@@ -353,9 +433,9 @@ function PatientInfo3() {
                 <React.Fragment>
                   <h3 className="vertical-timeline-element-title">{t.title}</h3>
                   {t.subtitle && (
-                    <h4 className="vertical-timeline-element-subtitle">
+                    <h6 className="vertical-timeline-element-subtitle">
                       {t.subtitle}
-                    </h4>
+                    </h6>
                   )}
                   {t.desc && <p>{t.desc}</p>}
                 </React.Fragment>
