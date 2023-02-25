@@ -9,12 +9,14 @@ function Tabs({
   tab4,
   tab5,
   tab6,
+  tab7,
   content1: Page1,
   content2: Page2,
   content3: Page3,
   content4: Page4,
   content5: Page5,
   content6: Page6,
+  content7: Page7,
 }) {
   const [toggleState, setToggleState] = useState(1);
 
@@ -61,6 +63,12 @@ function Tabs({
         >
           {tab6}
         </button>
+        <button
+          className={toggleState === 7 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(7)}
+        >
+          {tab7}
+        </button>
       </div>
 
       <div className="content-tabs">
@@ -96,6 +104,11 @@ function Tabs({
           className={toggleState === 6 ? "content  active-content" : "content"}
         >
           <Page6 />
+        </div>
+        <div
+          className={toggleState === 7 ? "content  active-content" : "content"}
+        >
+          <Page7 />
         </div>
       </div>
     </div>

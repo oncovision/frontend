@@ -15,12 +15,12 @@ function Home() {
         <div className="flex-row pt-3rem">
           <div className="px-2">
             <Link to="/menu" className="btn-1">
-              For Doctors
+              Onco-Clinicians
             </Link>
           </div>
           <div className="px-2">
             <Link to="/menu2" className="btn-1">
-              For Data Scientists
+              BioPharma Scientists
             </Link>
           </div>
         </div>

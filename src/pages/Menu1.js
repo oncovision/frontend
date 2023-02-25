@@ -9,7 +9,7 @@ function Menu1() {
       className="cancer"
       style={{
         backgroundImage: `url(${lungCancer})`,
-        height: '100vh'
+        height: "100vh",
       }}
     >
       <div className="overlay"></div>
@@ -18,9 +18,9 @@ function Menu1() {
         <br />
         <div className="d-inline-flex subtitle mb-2 fw-bold">
           <div className="pe-3">Oncology</div>
-          <div class = "vertical pe-3"></div>
+          <div className="vertical pe-3"></div>
           <div className="pe-3">Neurology</div>
-          <div class = "vertical pe-3"></div>
+          <div className="vertical pe-3"></div>
           <div>Cardiology</div>
         </div>
         <br />

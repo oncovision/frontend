@@ -10,20 +10,20 @@ function Page1() {
     <div>
       <Grid container spacing={2}>
         <Grid item xs={12}>
-          <h1>Kepler Meier Curve</h1>
+          <h1>Kaplan Meir Curves </h1>
         </Grid>
         <Grid item xs={6}>
           <div className="card">
             <img src={image5} className="card-img-top" alt="..." />
             <h3>Cohort 1</h3>
-            <p>Kepler Meier Curve</p>
+            <p>Kaplan Meir Curve</p>
           </div>
         </Grid>
         <Grid item xs={6}>
           <div className="card">
             <img src={image6} className="card-img-top" alt="..." />
             <h3>Cohort 1 vs 2</h3>
-            <p>Kepler Meier Curve</p>
+            <p>Kaplan Meir Curve</p>
           </div>
         </Grid>
       </Grid>

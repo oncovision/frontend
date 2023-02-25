@@ -18,22 +18,45 @@ function PatientInfoPage() {
       {
         label: "Calculated MRD Value",
         data: UserData.map((data) => data.userGain),
-        backgroundColor: [
-          "rgba(75,192,192,1)",
-          "#ecf0f1",
-          "#50AF95",
-          "#f3ba2f",
-          "#2a71d0",
-        ],
+        backgroundColor: ["rgba(75,192,192,1)"],
       },
     ],
   });
+  const mrdOption = {
+    responsive: true,
+    scales: {
+      x: {
+        title: {
+          display: true,
+          text: "Time (in weeks)",
+          colour: "black",
+        },
+      },
+      y: {
+        title: {
+          display: true,
+          text: "CTC count (cells/7.5ml)",
+          colour: "black",
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        position: "top",
+      },
+
+      title: {
+        display: true,
+        text: "Diagnosis Age",
+      },
+    },
+  };
 
   return (
     <div>
       <div className="chart-center-container">
         <div className="singleChart">
-          <LineChart chartData={userData} />
+          <LineChart chartData={userData} options={mrdOption} />
         </div>
 
         <h3>MRD data of Patient id-{pdata[0]}</h3>
