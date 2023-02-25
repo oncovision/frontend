@@ -14,12 +14,12 @@ function Home() {
 
         <div className="flex-row pt-3rem">
           <div className="px-2">
-            <Link to="/menu" className="btn-1">
-              Onco-Clinicians
+            <Link to="/menu" className="btn-1 lh-1-2">
+              Oncoclinicains & Health Care Professinals
             </Link>
           </div>
           <div className="px-2">
-            <Link to="/menu2" className="btn-1">
+            <Link to="/menu2" className="btn-1 lh-1-2">
               BioPharma Scientists
             </Link>
           </div>

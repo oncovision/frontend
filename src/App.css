@@ -35,3 +35,6 @@ body {
   border-left: 3px solid #fd5f07;
   height: 20px;
 }
+.lh-1-2{
+  line-height: 1.2!important;
+}
