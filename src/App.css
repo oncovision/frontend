@@ -25,3 +25,12 @@ body {
 .text-white{
   color: #fff;
 }
+.subtitle{
+  color: #fff; 
+  background-color: #231e28;
+  padding: 10px 15px; 
+}
+.vertical {
+  border-left: 3px solid #fd5f07;
+  height: 20px;
+}

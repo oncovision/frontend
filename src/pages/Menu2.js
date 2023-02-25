@@ -14,7 +14,13 @@ function Menu2() {
       <div className="headerContainer text-white">
         <h2> Welcome Data Scientist to Persistent Bio Portal </h2>
         <br />
-        <p className="text-white"> Lung Cancer</p>
+        <div className="d-inline-flex subtitle mb-2 fw-bold">
+          <div className="pe-3">Oncology</div>
+          <div class = "vertical pe-3"></div>
+          <div className="pe-3">Neurology</div>
+          <div class = "vertical pe-3"></div>
+          <div>Cardiology</div>
+        </div>
         <br />
         <Link to="/DataScientistLungCancer" className="btn-1">
           Visualize
