@@ -16,19 +16,19 @@ import "react-vertical-timeline-component/style.min.css";
 
 const workIcon = {
   icon: <FontAwesomeIcon icon={faRadiation} />,
-  iconStyle: { background: "rgb(33, 150, 243)", color: "#fff" },
+  iconStyle: { background: "rgb(0, 156, 179)", color: "#fff" },
 };
 const schoolIcon = {
   icon: <FontAwesomeIcon icon={faSchool} />,
-  iconStyle: { background: "rgb(233, 30, 99)", color: "#fff" },
+  iconStyle: { background: "rgb(255, 154, 140)", color: "#fff" },
 };
 const admitIcon = {
   icon: <FontAwesomeIcon icon={faTruck} />,
-  iconStyle: { background: "rgb(233, 30, 99)", color: "#fff" },
+  iconStyle: { background: "rgb(255, 154, 140)", color: "#fff" },
 };
 const starIcon = {
   icon: <FontAwesomeIcon icon={faHospital} />,
-  iconStyle: { background: "rgb(16, 204, 82)", color: "#fff" },
+  iconStyle: { background: "rgb(173, 217, 139)", color: "#fff" },
 };
 
 export const timeline1 = [
@@ -323,19 +323,19 @@ function PatientInfo2() {
     <div
       className="App"
       style={{
-        backgroundColor: "silver",
+        backgroundColor: "white",
       }}
     >
-      <h3>Patinet Data for id - {pdata} </h3>
+      <h3>Patinet Data for Id - {pdata} </h3>
       <VerticalTimeline>
         {timeline.map((t, i) => {
           const contentStyle =
             i === 0
-              ? { background: "rgb(33, 150, 243)", color: "#fff" }
+              ? { background: "rgb(0, 156, 179)", color: "#fff" }
               : undefined;
           const arrowStyle =
             i === 0
-              ? { borderRight: "7px solid  rgb(33, 150, 243)" }
+              ? { borderRight: "7px solid  rgb(0, 156, 179)" }
               : undefined;
 
           return (
