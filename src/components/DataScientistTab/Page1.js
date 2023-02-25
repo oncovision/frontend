@@ -9,8 +9,12 @@ function Page1() {
   return (
     <div>
       <Grid container spacing={2}>
-        <Grid item xs={12}>
-          <h1>Kaplan Meir Curves </h1>
+        <Grid item xs={12} align="center">
+          <h2>Kaplan Meir Curves </h2>
+          <p>
+            (Obtained from Integrated Analysis of Multi-Modal Data from a Cancer
+            Patient)
+          </p>
         </Grid>
         <Grid item xs={6}>
           <div className="card">

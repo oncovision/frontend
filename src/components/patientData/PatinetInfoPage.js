@@ -54,13 +54,16 @@ function PatientInfoPage() {
 
   return (
     <div>
-      <div className="chart-center-container">
-        <div className="singleChart">
+      <div className="chart-center-container" style={{ paddingTop: "0px" }}>
+        <div className="singleChart" tyle={{ paddingTop: "0px" }}>
           <LineChart chartData={userData} options={mrdOption} />
         </div>
 
         <h3>MRD data of Patient id-{pdata[0]}</h3>
-        <p></p>
+        <p>
+          (Obtained from Integrated Analysis of Multi-Modal Data from a Cancer
+          Patient)
+        </p>
       </div>
     </div>
   );
