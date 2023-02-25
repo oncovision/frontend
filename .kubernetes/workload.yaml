@@ -1,0 +1,44 @@
+---
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "oncovision"
+  namespace: "default"
+  labels:
+    app: "oncovision"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "oncovision"
+  template:
+    metadata:
+      labels:
+        app: "oncovision"
+    spec:
+      containers:
+      - name: "oncovision"
+        image: "europe-west3-docker.pkg.dev/solution-kit-11/oncovision/frontend:latest"
+        imagePullPolicy: Always
+---
+apiVersion: "autoscaling/v2"
+kind: "HorizontalPodAutoscaler"
+metadata:
+  name: "oncovision-hpa"
+  namespace: "default"
+  labels:
+    app: "oncovision"
+spec:
+  scaleTargetRef:
+    kind: "Deployment"
+    name: "oncovision"
+    apiVersion: "apps/v1"
+  minReplicas: 1
+  maxReplicas: 5
+  metrics:
+  - type: "Resource"
+    resource:
+      name: "cpu"
+      target:
+        type: "Utilization"
+        averageUtilization: 80
