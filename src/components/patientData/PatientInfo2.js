@@ -326,7 +326,7 @@ function PatientInfo2() {
         backgroundColor: "white",
       }}
     >
-      <h3>Patinet Data for Id - {pdata} </h3>
+      <h3>Patient Data for Id - {pdata} </h3>
       <VerticalTimeline>
         {timeline.map((t, i) => {
           const contentStyle =
