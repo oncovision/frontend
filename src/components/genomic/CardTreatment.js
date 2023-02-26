@@ -8,18 +8,18 @@ export default function CardTreatment(){
             label: 'Quantity',
             data: [128, 199, 100, 98, 115],
             backgroundColor: [
-              '#f88508', 
-              '#dc3912',
-              '#718cf1',
-              '#990099',
-              '#109618'
+              '#FD7F39', 
+              '#EBC386',
+              '#009CB3',
+              '#FF9A8C',
+              '#ADD98B'
             ],
             borderColor: [
-            '#f88508', 
-            '#dc3912',
-            '#718cf1',
-            '#990099',
-            '#109618'
+            '#FD7F39', 
+              '#EBC386',
+              '#009CB3',
+              '#FF9A8C',
+              '#ADD98B'
             ],
             borderWidth: 1,
           },
