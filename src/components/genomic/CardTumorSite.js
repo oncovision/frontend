@@ -8,18 +8,18 @@ export default function CardTumorSite(){
             label: 'Quantity',
             data: [128, 199, 100, 98, 115],
             backgroundColor: [
-              '#f88508', 
-              '#dc3912',
-              '#718cf1',
-              '#990099',
-              '#109618'
+              '#ADD98B', 
+              '#FF9A8C',
+              '#009CB3',
+              '#EBC386',
+              '#FD7F39'
             ],
             borderColor: [
-            '#f88508', 
-            '#dc3912',
-            '#718cf1',
-            '#990099',
-            '#109618'
+              '#ADD98B', 
+              '#FF9A8C',
+              '#009CB3',
+              '#EBC386',
+              '#FD7F39'
             ],
             borderWidth: 1,
           },
