@@ -15,7 +15,7 @@ function Home() {
         <div className="flex-row pt-3rem">
           <div className="px-2">
             <Link to="/menu" className="btn-1 lh-1-2">
-              Oncoclinicains & Health Care Professinals
+              Onco-clinicians & Health Care Professinals
             </Link>
           </div>
           <div className="px-2">
