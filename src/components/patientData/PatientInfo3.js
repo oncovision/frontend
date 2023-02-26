@@ -41,14 +41,14 @@ const starIcon = {
 export const timeline1 = [
   {
     icon: schoolIcon,
-    date: "2004 - 2006",
+    date: "2006 - present",
     title: "Malignant lesion found",
     subtitle: "Status : Tumours taken for tests",
     desc: "Signs and symptoms of malignant lesion observed.",
   },
   {
     icon: familyIcon,
-    date: " - 2006",
+    date: "2004 - 2006",
     title: "Medical History of family verified.",
     subtitle: "No chronic health conditions found.",
     desc: "Family history found to be clean.",
@@ -74,8 +74,6 @@ export const timeline1 = [
     subtitle: "Fatigue issues",
     desc: "Patient used to feel tired very easily.",
   },
-
-  { icon: starIcon },
 ];
 
 export const timeline2 = [
@@ -114,8 +112,6 @@ export const timeline2 = [
     subtitle: "Cough issues",
     desc: "Patinet used to get persistent cough.",
   },
-
-  { icon: starIcon },
 ];
 
 export const timeline3 = [
@@ -154,8 +150,6 @@ export const timeline3 = [
     subtitle: "Hoarseness issues",
     desc: "Patinet used to feel hoarseness.",
   },
-
-  { icon: starIcon },
 ];
 
 export const timeline4 = [
@@ -194,7 +188,6 @@ export const timeline4 = [
     subtitle: "Common cold and trouble breathing.",
     desc: "Patinet used to catch cold easily and shortness of breath.",
   },
-  { icon: starIcon },
 ];
 
 export const timeline5 = [
@@ -233,7 +226,6 @@ export const timeline5 = [
     subtitle: "Fatigue issues",
     desc: "Patinet used to feel tired very easily.",
   },
-  { icon: starIcon },
 ];
 
 function PatientInfo3() {
@@ -263,10 +255,7 @@ function PatientInfo3() {
       <h3>Patient Data for Id - {pdata} </h3>
       <VerticalTimeline>
         {timeline.map((t, i) => {
-          const contentStyle =
-            i === 0
-              ? { background: "rgb(0, 156, 179)", color: "#fff" }
-              : undefined;
+          const contentStyle = { background: "rgb(0, 156, 179)", color: "#000" };
           const arrowStyle =
             i === 0
               ? { borderRight: "7px solid  rgb(0, 156, 179)" }

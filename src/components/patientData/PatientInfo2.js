@@ -82,7 +82,6 @@ export const timeline1 = [
     subtitle: "Minor stress issues",
     desc: "Patinet had high stress due to studies",
   },
-  { icon: starIcon },
 ];
 
 export const timeline2 = [
@@ -136,7 +135,6 @@ export const timeline2 = [
     subtitle: "Minor stress issues",
     desc: "Patinet had high stress due to studies",
   },
-  { icon: starIcon },
 ];
 
 export const timeline3 = [
@@ -190,7 +188,6 @@ export const timeline3 = [
     subtitle: "Minor stress issues",
     desc: "Patinet had high stress due to studies",
   },
-  { icon: starIcon },
 ];
 
 export const timeline4 = [
@@ -244,7 +241,6 @@ export const timeline4 = [
     subtitle: "Minor stress issues",
     desc: "Patinet had high stress due to studies",
   },
-  { icon: starIcon },
 ];
 
 export const timeline5 = [
@@ -298,7 +294,6 @@ export const timeline5 = [
     subtitle: "Minor stress issues",
     desc: "Patinet had high stress due to studies",
   },
-  { icon: starIcon },
 ];
 
 function PatientInfo2() {
@@ -329,10 +324,7 @@ function PatientInfo2() {
       <h3>Patient Data for Id - {pdata} </h3>
       <VerticalTimeline>
         {timeline.map((t, i) => {
-          const contentStyle =
-            i === 0
-              ? { background: "rgb(0, 156, 179)", color: "#fff" }
-              : undefined;
+          const contentStyle = { background: "rgb(0, 156, 179)", color: "#000" };
           const arrowStyle =
             i === 0
               ? { borderRight: "7px solid  rgb(0, 156, 179)" }
